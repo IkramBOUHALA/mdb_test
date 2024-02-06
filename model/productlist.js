@@ -11,7 +11,7 @@ const productlist= mongoose.Schema({
     },
     series_number:{
         type:Number,
-        unique:true
+        // unique:true
     }
 })
 module.exports=mongoose.model('product', productlist)

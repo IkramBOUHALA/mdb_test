@@ -2,7 +2,7 @@ require('dotenv').config()
 const express=require('express') 
 const app=express()
 const productlistRouter=require('./routes/productRoute')
-
+app.use(express.json());
 
 
 // database
