@@ -1,7 +1,7 @@
 const { StatusCodes } = require("http-status-codes");
 // const Product = require("../model/productlist");
 const productlist = require("../model/productlist");
-const customError = require('../error/error')
+const customError = require('../middleware/errorHandler')
 
 
 const createproductcontroller = async (req, res) => {
