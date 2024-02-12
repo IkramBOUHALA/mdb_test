@@ -2,6 +2,7 @@ require('dotenv').config()
 const express=require('express') 
 const app=express()
 const productlistRouter=require('./routes/productRoute')
+const userRoute=require('./routes/userRoute')
 app.use(express.json());
 
 
@@ -11,6 +12,7 @@ const connectDB = require('./db/connect')
 // router
 
 app.use('/api/v1/productlist', productlistRouter )
+app.use('/api/v1/user',userRoute )
 
 const port=process.env.PORT|| 3001  
 const start= async()=>{
